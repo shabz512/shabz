@@ -164,10 +164,14 @@ footer {
 }
 /* موبائل ریسپانسیو */
 @media (max-width: 768px) {
-    #cart-section {
-        padding: 10px;
+    .product:hover {
+        transform: none;
     }
-    .cart-item {
-        font-size: 0.9rem;
+    .product-details {
+        position: static;
+        display: none;
+    }
+    .product:hover .product-details {
+        display: block;
     }
 }
