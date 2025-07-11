@@ -154,7 +154,10 @@ footer {
 }
 /* موبائل ریسپانسیو */
 @media (max-width: 768px) {
-    header{
-        flex-direction: column;
+    #cart-section {
+        padding: 10px;
+    }
+    .cart-item {
+        font-size: 0.9rem;
     }
 }
