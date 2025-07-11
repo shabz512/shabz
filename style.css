@@ -34,7 +34,7 @@ header {
 }
 
 .product {
-    background: rgb(219, 234, 245);
+    background: rgb(203, 225, 241);
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -52,7 +52,7 @@ header {
 .btn {
     background-color: #4804c5;
     color: hsl(340, 18%, 97%);
-    padding: 10px 20px;
+    padding: 7px 15px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
@@ -96,6 +96,18 @@ button {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+footer {
+    background-color: hwb(59 3% 3%);
+    padding: 0.10rem;
+    box-shadow: 0 2px 5px rgba(245, 234, 234, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
 }
 /* موبائل ریسپانسیو */
 @media (max-width: 768px) {

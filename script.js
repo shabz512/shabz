@@ -3,7 +3,7 @@ const products = [
     {
         name:  "لیڈیز بیگ",
         price:  "2500 روپے",
-        image:  "bag1.jpg"
+        image:  "bag.png"
      },
     {
         name: "شابز کلاسک ",
@@ -28,18 +28,15 @@ const products = [
     {
         name:   "ڈیجیٹل تسبیح",
         price:  "999 روپے",
-        image:  "tasbeeh.jpg"
+        image:  "tasbeeh.png"
     }
 ];
-
 // پروڈکٹس ڈسپلے کریں
 let cart = [];
-
 function addToCart(productName, price) {
     cart.push({ name: productName, price: price });
     alert(`${productName} کارٹ میں شامل ہو گیا ہے!`);
 }
-
 function displayProducts() {
     const grid = document.querySelector('.product-grid');
     products.forEach(product => {
@@ -50,7 +47,7 @@ function displayProducts() {
                 <p>${product.price}</p>
                 <button onclick="addToCart('${product.name}', '${product.price}')">کارٹ میں شامل کریں</button>
                 <a href="https://wa.me/923001234567?text=میں%20${encodeURIComponent(product.name)}%20خریدنا%20چاہتا%20ہوں%20(${product.price})" class="btn">
-                    <i class="fab fa-whatsapp"></i> آرڈر کریں
+                    <i class="fab fa-whatsapp"></i> خریدیں
                 </a>
             </div>
         `;
