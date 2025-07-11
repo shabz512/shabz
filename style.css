@@ -1,6 +1,6 @@
 /* بنیادی سیٹنگز */
 body {
-    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Calibri', serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -60,14 +60,15 @@ header {
 }
 /* === نیا اضافہ شدہ CSS === */
 #hero {
-    background: linear-gradient(#121377b3, rgba(28, 20, 105, 0.7)), url('images/banner.jpg');
-    background-size: cover;
-    height: 150px;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+     url('banner2.jpg') center/cover no-repeat;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: hsl(0, 0%, 100%);
+    color: #000000; /* سیاہ ٹیکسٹ */
+    position: relative;
 }
 
 .tagline {
@@ -96,6 +97,48 @@ button {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+/* کارٹ سیکشن سٹائل */
+#cart-section {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.remove-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cart-total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    text-align: right;
+}
+
+#checkout-btn {
+    background: #2E8B57;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
 }
 footer {
     background-color: hwb(59 3% 3%);
