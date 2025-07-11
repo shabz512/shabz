@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #333;
-    text-align: right;
+    color: #0b0447;
+    text-align: center;
 }
 
 /* ہیڈر */
@@ -60,14 +60,14 @@ header {
 }
 /* === نیا اضافہ شدہ CSS === */
 #hero {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-     url('banner2.jpg') center/cover no-repeat;
-    height: 300px;
+    background: linear-gradient(rgba(12, 1, 110, 0.7), rgba(4, 186, 241, 0.7)),
+     url('') center/cover no-repeat;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #000000; /* سیاہ ٹیکسٹ */
+    color: #ffffff; /* سیاہ ٹیکسٹ */
     position: relative;
 }
 
@@ -116,11 +116,11 @@ button {
 }
 
 .remove-btn {
-    background: #ff4d4d;
+    background: #f71616;
     color: white;
     border: none;
     border-radius: 50%;
-    width: 25px;
+    width: 35px;
     height: 25px;
     cursor: pointer;
     font-weight: bold;
@@ -128,7 +128,7 @@ button {
 
 #cart-total {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 15px 0;
     text-align: right;
 }
