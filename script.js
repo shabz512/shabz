@@ -93,5 +93,29 @@ document.getElementById('checkout-btn').addEventListener('click', () => {
         alert('آپ کے کارٹ میں کوئی پروڈکٹ نہیں ہے');
     }
 });
+// نمبر کاپی کرنے کا فنکشن
+document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const textToCopy = this.getAttribute('data-text');
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                const originalText = this.textContent;
+                this.textContent = 'کاپی ہو گیا!';
+                setTimeout(() => {
+                    this.textContent = originalText;
+                }, 2000);
+            })
+            .catch(err => {
+                console.error('کاپی کرنے میں ناکام: ', err);
+            });
+    });
+});
+
+// چیک آؤٹ پر ادائیگی کے اختیارات دکھائیں
+document.getElementById('checkout-btn').addEventListener('click', function() {
+    document.getElementById('payment-methods').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
 // صفحہ لوڈ ہونے پر
 window.onload = displayProducts;
