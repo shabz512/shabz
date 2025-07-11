@@ -59,12 +59,6 @@ header {
     margin-top: 10px;
 }
 
-/* موبائل ریسپانسیو */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-}
 /* === نیا اضافہ شدہ CSS === */
 #hero {
     background: linear-gradient(#23b8f3b3, rgba(9, 2, 70, 0.7)), url('images/banner.jpg');
@@ -103,4 +97,10 @@ button {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+/* موبائل ریسپانسیو */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
 }
