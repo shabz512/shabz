@@ -65,3 +65,42 @@ header {
         flex-direction: column;
     }
 }
+/* === نیا اضافہ شدہ CSS === */
+#hero {
+    background: linear-gradient(#23b8f3b3, rgba(9, 2, 70, 0.7)), url('images/banner.jpg');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFD700;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#nav-menu {
+    display: flex;
+    justify-content: center;
+    background: #f8f8f8;
+    padding: 15px;
+}
+
+#nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+button {
+    background: #2E8B57;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}

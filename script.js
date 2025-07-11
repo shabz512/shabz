@@ -33,6 +33,13 @@ const products = [
 ];
 
 // پروڈکٹس ڈسپلے کریں
+let cart = [];
+
+function addToCart(productName, price) {
+    cart.push({ name: productName, price: price });
+    alert(`${productName} کارٹ میں شامل ہو گیا ہے!`);
+}
+
 function displayProducts() {
     const grid = document.querySelector('.product-grid');
     products.forEach(product => {
@@ -41,7 +48,8 @@ function displayProducts() {
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>${product.price}</p>
-                <a href="https://wa.me/+923479466158?text=میں%20${encodeURIComponent(product.name)}%20خریدنا%20چاہتا%20ہوں%20(${product.price})" class="btn">
+                <button onclick="addToCart('${product.name}', '${product.price}')">کارٹ میں شامل کریں</button>
+                <a href="https://wa.me/923001234567?text=میں%20${encodeURIComponent(product.name)}%20خریدنا%20چاہتا%20ہوں%20(${product.price})" class="btn">
                     <i class="fab fa-whatsapp"></i> آرڈر کریں
                 </a>
             </div>
