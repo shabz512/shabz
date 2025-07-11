@@ -21,7 +21,7 @@ header {
 
 .logo h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     
 }
 
@@ -58,17 +58,16 @@ header {
     display: inline-block;
     margin-top: 10px;
 }
-
 /* === نیا اضافہ شدہ CSS === */
 #hero {
-    background: linear-gradient(#23b8f3b3, rgba(9, 2, 70, 0.7)), url('images/banner.jpg');
+    background: linear-gradient(#121377b3, rgba(28, 20, 105, 0.7)), url('images/banner.jpg');
     background-size: cover;
-    height: 300px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #FFD700;
+    color: hsl(0, 0%, 100%);
 }
 
 .tagline {
@@ -100,7 +99,7 @@ button {
 }
 /* موبائل ریسپانسیو */
 @media (max-width: 768px) {
-    header {
+    header{
         flex-direction: column;
     }
 }
