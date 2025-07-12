@@ -32,7 +32,7 @@ header {
 /* نیویگیشن مینو */
 nav {
     display: flex;
-    gap: 20px; /* مینو آئٹمز کے درمیان فاصلہ */
+    gap: 10px; /* مینو آئٹمز کے درمیان فاصلہ */
 }
 
 nav a {
@@ -238,12 +238,10 @@ button {
         flex-direction: column;
         padding: 15px;
     }
-    
-    .logo {
+        .logo {
         margin-bottom: 15px;
     }
-    
-    nav {
+        nav {
         flex-wrap: wrap;
         justify-content: center;
     }
