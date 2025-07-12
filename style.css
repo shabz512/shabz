@@ -189,7 +189,7 @@ button {
     border-radius: 10px;
 }
 
-.payment-option {
+.payment-option  {
     background: rgb(231, 234, 236);
     padding: 20px;
     margin: 15px 0;
@@ -203,6 +203,9 @@ button {
 .payment-option img {
     width: 80px;
     margin-right: 20px;
+}
+.payment-option img:hover {
+    transform: scale(1.5); /* ہوور پر تھوڑا بڑا ہو */
 }
 
 .copy-btn {
