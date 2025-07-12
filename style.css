@@ -9,19 +9,49 @@ body {
 }
 
 /* ہیڈر */
+/* === ہیڈر سٹائل === */
 header {
-    background-color: hsl(54, 100%, 53%);
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* لوگو بائیں، مینو دائیں */
     align-items: center;
+    padding: 15px 30px;
+    background-color: #FFD700; /* گولڈ رنگ */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* لوگو سٹائل */
+.logo img {
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.5); /* ہوور پر تھوڑا بڑا ہو */
+}
+
+/* نیویگیشن مینو */
+nav {
+    display: flex;
+    gap: 20px; /* مینو آئٹمز کے درمیان فاصلہ */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(236, 64, 64, 0.205);
+}
 
 .logo h1 {
     margin: 0;
     font-size: 3rem;
+    
     
 }
 
@@ -70,7 +100,7 @@ header {
 }
 /* === نیا اضافہ شدہ CSS === */
 #hero {
-    background: linear-gradient(rgba(12, 1, 110, 0.7), rgba(4, 186, 241, 0.7)),
+    background: linear-gradient(rgba(12, 1, 110, 0.7), rgba(9, 169, 218, 0.7)),
      url('') center/cover no-repeat;
     height: 120px;
     display: flex;
@@ -82,7 +112,7 @@ header {
 }
 
 .tagline {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 10px 0;
 }
 
@@ -204,15 +234,18 @@ button {
 }
 /* موبائل ریسپانسیو */
 @media (max-width: 768px) {
-    .product:hover {
-    transform: none;
+    header {
+        flex-direction: column;
+        padding: 15px;
     }
-    .product-details {
-    position: static;
-    display: none;
+    
+    .logo {
+        margin-bottom: 15px;
     }
-    .product:hover .product-details {
-    display: block;
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 footer {
